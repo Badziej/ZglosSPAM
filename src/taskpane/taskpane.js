@@ -45,7 +45,7 @@ export async function reportSpam() {
         let attachment = result.value.length > 0 ? result.value[0] : null;
         
         Office.context.mailbox.displayNewMessageForm({
-          to: ["bezpieczenstwo_it@efl.com.pl"],
+          to: ["casb@ratels.pl"],
           subject: "[ZS] " + item.subject,
           attachments: attachment ? [{ name: "ReportedEmail.eml", url: attachment.url }] : []
         });
